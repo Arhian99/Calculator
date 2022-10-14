@@ -1,0 +1,136 @@
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator {
+    width: 460px;
+    height: 683px;
+    padding: 20px;
+    background-color: black;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.screen {
+    width: 420px;
+    height: 25%;
+    border: 1px solid white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 25px;
+}
+.buttons-container {
+    border: 1px solid white;
+    padding: 20px;
+    margin: 10px;
+    width: 400px;
+    height: 75%;
+    border-radius: 25px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
+    column-gap: 0px;
+}
+
+
+#zero {
+    width: 170px;
+    border-radius: 40px;
+    grid-column: span 2;
+    /*background-color: rgb(72, 72, 72); */
+    background-color: darkgray;
+
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+#clear {
+    grid-column: span 3;
+    width: 280px;
+    border-radius: 100px;
+    background-color: darkgray;
+
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    font-size: 50px;
+    cursor: pointer;
+
+}
+
+#equal {
+    background-color: orange;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.numbers {
+    background-color: rgb(72, 72, 72);
+
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.operator {
+    background-color: orange;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+
+.screen {
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}

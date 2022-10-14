@@ -1,15 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script defer scr="index.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <title>Calculator</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script defer src="index.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <title>Calculator</title>
+    </head>
 
-<body>
-    
-</body>
+    <body>
+        <div class="container">
+            <div class="calculator">
+                <div class="screen"><p id="screen-text">Error</p></div>
+                <div class="buttons-container">
+                    <div id="clear"><p>AC</p></div>
+                    <div class="operator"><p>/</p></div>
+                    <div class="numbers"><p>7</p></div>
+                    <div class="numbers"><p>8</p></div>
+                    <div class="numbers"><p>9</p></div>
+                    <div class="operator"><p>*</p></div>
+                    <div class="numbers"><p>4</p></div>
+                    <div class="numbers"><p>5</p></div>
+                    <div class="numbers"><p>6</p></div>
+                    <div class="operator"><p>-</p></div>
+                    <div class="numbers"><p>1</p></div>
+                    <div class="numbers"><p>2</p></div>
+                    <div class="numbers"><p>3</p></div>
+                    <div class="operator"><p>+</p></div>
+                    <div class="numbers" id="zero"><p>0</p></div>
+                    <div class="numbers"><p>.</p></div>
+                    <div id="equal"><p>=</p></div>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
