@@ -1,19 +1,5 @@
 let clear = document.getElementById('clear');
-let division = document.getElementById('division');
-let seven = document.getElementById('seven');
-let eight = document.getElementById('eight');
-let nine = document.getElementById('nine');
-let multiplication = document.getElementById('multiplication');
-let four = document.getElementById('four');
-let five = document.getElementById('five');
-let six = document.getElementById('six');
-let subtraction = document.getElementById('subtraction');
-let one = document.getElementById('one');
-let two = document.getElementById('two');
-let three = document.getElementById('three');
-let addition = document.getElementById('addition');
 let zero = document.getElementById('zero');
-let decimal = document.getElementById('decimal');
 let equal = document.getElementById('equal');
 let screenText = document.getElementById('screen-text');
 
@@ -26,19 +12,19 @@ let operators = document.getElementsByClassName('operator');
 
 //math functions
 function add(numberA, numberB) {
-    return +numberA + +numberB;
+    return (+numberA + +numberB).toFixed(5);
 }
 
 function subtract(numberA, numberB) {
-    return +numberA - +numberB;
+    return (+numberA - +numberB).toFixed(5);
 }
 
 function multiply(numberA, numberB) {
-    return +numberA * +numberB;
+    return (+numberA * +numberB).toFixed(5);
 }
 
 function divide(numberA, numberB) {
-    return +numberA / +numberB;
+    return (+numberA / +numberB).toFixed(5);
 }
 
 
@@ -101,15 +87,17 @@ for (operator of operators) {
             screenText.innerHTML = onScreenA;     
 
             num.push(typed);
-            num.push(event.target.textContent);
             typed = '';
+            num.push(event.target.textContent);
         }
 
         else {
             onScreenA += event.target.textContent;
             screenText.innerHTML = onScreenA;
-            operator = event.target.textContent;
-            num.push(operator);
+
+            if (typed !== '') {num.push(typed)};
+            typed = '';
+            num.push(event.target.textContent);
         }
 /*
         if (num[0] == undefined) {
@@ -124,7 +112,7 @@ for (operator of operators) {
 
 equal.addEventListener('click', event => {
     num.push(typed);
-
+    typed = '';
 
     numberA = num[0];
     operator = num[1];
